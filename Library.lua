@@ -1054,6 +1054,10 @@ do
 
             Groupbox:Resize();
         end
+        
+        function Label:GetText()
+            return TextLabel.Text 
+        end
 
         if (not DoesWrap) then
             setmetatable(Label, BaseAddons);
